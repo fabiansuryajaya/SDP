@@ -1,5 +1,10 @@
 <?php
     require_once("../config.php");
+
+    if(!isset($_SESSION['isLogin'])){
+		header("location: index.php");
+	}
+
     if(isset($_POST['masKat'])){
         header("location: kategori/input.php");
     }
@@ -21,6 +26,7 @@
                 </tr>
                 <tr>    
                     <td>Master Makanan</td>
+                    <td><input type="submit" value="Makanan" name="makanan"></td>
                 </tr>
                 
                 <td>Master Paket</td>
