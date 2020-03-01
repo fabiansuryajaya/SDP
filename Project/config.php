@@ -2,6 +2,8 @@
     $host = "localhost";
     $user = "root";
     $password = "";
-    $dbBase = "sdp";
+    $dbBase = "restoran";
+    $dbBase2 = "detail";
     $conn = mysqli_connect($host,$user,$password,$dbBase);
+    $conn_detail = mysqli_connect($host,$user,$password,$dbBase2);
 ?>
